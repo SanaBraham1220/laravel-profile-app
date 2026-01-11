@@ -6,7 +6,7 @@ use Carbon\Carbon;
 
 class TestDirectivesController extends Controller
 {
-    function index()
+    public function index()
     {
         $name = 'Sana';
         $lastname = 'Braham';

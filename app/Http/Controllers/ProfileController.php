@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\View\View;
-
 class ProfileController extends Controller
 {
-    function index()
+    public function index()
     {
         return View('profile');
     }
