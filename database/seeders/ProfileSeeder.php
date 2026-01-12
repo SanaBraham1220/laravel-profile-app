@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Profile;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProfileSeeder extends Seeder
 {
@@ -15,11 +16,6 @@ class ProfileSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table("profiles")->insert([
-            'name' => Str::random(10),
-            'password'=>Hash::make('password'),
-            'email' =>  Str::random(30).'@gmail.com',
-            'bio' => Str::random(255)
-        ]);
+      Profile::factory()->count(10)->create();
     }
 }
