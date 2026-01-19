@@ -14,4 +14,5 @@ class Profile extends Model
         'email',
         'bio'
     ];
+
 }

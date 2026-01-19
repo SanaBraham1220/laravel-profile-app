@@ -5,7 +5,7 @@
         <h6>Name: {{ $profile->name }}</h6>
         <p class="card-text">Bio: {{ Str::limit($profile->bio, 50) }}</p>
         <div class="card-footer text-muted">
-            <a href="{{ route('profile.show', $profile->id) }}" class="btn btn-primary stretched-link">View Profile</a>
+            <a href="{{ route('profile.show', $profile) }}" class="btn btn-primary stretched-link">View Profile</a>
         </div>
     </div>
 </div>

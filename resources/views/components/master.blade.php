@@ -1,4 +1,3 @@
-
 @props(['title'])
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +13,11 @@
 
 <body>
     @include('partials.nav')
+    <div class="container">
+        <div class="row my-3">
+            @include('partials.flashbag')
+        </div>
+    </div>
     <main>
         <div class="container">
             {{ $slot }}
