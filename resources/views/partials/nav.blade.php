@@ -9,6 +9,12 @@
       <li class="nav-item active">
         <a class="nav-link" href="{{ route('home') }}">Home</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ route('login.show') }}">Login</a>
+      </li>
+      <li class="nav-item active">
+              <a class="nav-link" href="{{ route('login.logout') }}">Logout</a>
+            </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('profiles.index') }}">Profiles</a>
       </li>
